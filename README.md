@@ -45,7 +45,7 @@ src/test/resources/
     │       └── entry
     │       └── manifest.json
     └── topic-2
-        ├── 123
+        └── 123
             └── entry
             └── manifest.json
 ```
