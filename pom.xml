@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>no.ssb.rawdata.converter</groupId>
   <artifactId>rawdata-converter-testutils</artifactId>
-  <version>0.1.3</version>
+  <version>0.1.4-SNAPSHOT</version>
 
   <properties>
     <jdk.version>14</jdk.version>
