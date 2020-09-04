@@ -9,7 +9,7 @@ Misc support utilities for rawdata converter testing.
 The following snippet shows how you could load rawdata message fixtures from local disk:
 
 ```java
-import no.ssb.rawdata.converter.core.RawdataMessageFacade;
+import no.ssb.rawdata.converter.core.util.RawdataMessageFacade;
 import no.ssb.rawdata.converter.test.message.RawdataMessageFixtures;
 import no.ssb.rawdata.converter.test.message.RawdataMessages;
 import org.junit.jupiter.api.BeforeAll;
