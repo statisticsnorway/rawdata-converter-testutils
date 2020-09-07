@@ -10,7 +10,7 @@ release-dryrun: ## Simulate a release in order to detect any issues
 	mvn release:prepare release:perform -Darguments="-Dmaven.deploy.skip=true" -DdryRun=true
 
 .PHONY: release
-release: ## Release a new version. Update POMs and tag the new version in git. Drone deploys upon tag detection.
+release: ## Release a new version. Update POMs and tag the new version in git. Pipeline will deploy upon tag detection.
 	mvn release:prepare release:perform -Darguments="-Dmaven.deploy.skip=true -Dmaven.javadoc.skip=true"
 
 .PHONY: help
