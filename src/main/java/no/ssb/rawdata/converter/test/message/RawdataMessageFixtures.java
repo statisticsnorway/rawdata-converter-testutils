@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
@@ -36,7 +37,7 @@ public class RawdataMessageFixtures {
 
     static RawdataMessages loadRawdataMessages(Path rootPath, String group) throws IOException {
         final AtomicLong sequenceNo = new AtomicLong();
-        Map<String, RawdataMessage> messagesMap = new HashMap<>();
+        Map<String, RawdataMessage> messagesMap = new LinkedHashMap<>();
         final ULID ulid = new ULID();
 
         Files.list(rootPath.resolve(group)).sorted().filter(Files::isDirectory).forEach(path -> {
