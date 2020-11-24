@@ -6,7 +6,7 @@
   <version>0.1.6-SNAPSHOT</version>
 
   <properties>
-    <jdk.version>14</jdk.version>
+    <jdk.version>15</jdk.version>
     <maven.compiler.target>${jdk.version}</maven.compiler.target>
     <maven.compiler.source>${jdk.version}</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -72,7 +72,6 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven-surefire-plugin.version}</version>
           <configuration>
-            <argLine>--enable-preview</argLine>
             <detail>true</detail>
             <includes>
               <include>%regex[.*]</include>
@@ -85,10 +84,6 @@
           <version>3.7.0</version>
           <configuration>
             <release>${jdk.version}</release>
-            <compilerArgs>
-              <arg>-parameters</arg>
-              <arg>--enable-preview</arg>
-            </compilerArgs>
             <annotationProcessorPaths>
                   <path>
                     <groupId>org.projectlombok</groupId>
@@ -103,12 +98,6 @@
               <goals>
                 <goal>testCompile</goal>
               </goals>
-              <configuration>
-                <compilerArgs>
-                  <arg>-parameters</arg>
-                  <arg>--enable-preview</arg>
-                </compilerArgs>
-              </configuration>
             </execution>
           </executions>
         </plugin>
