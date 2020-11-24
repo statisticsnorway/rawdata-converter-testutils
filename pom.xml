@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>no.ssb.rawdata.converter</groupId>
   <artifactId>rawdata-converter-testutils</artifactId>
-  <version>0.1.6-SNAPSHOT</version>
+  <version>0.1.6</version>
 
   <properties>
     <jdk.version>15</jdk.version>
@@ -19,7 +19,7 @@
     <connection>scm:git:git://github.com/statisticsnorway/rawdata-converter-testutils.git</connection>
     <developerConnection>scm:git:git@github.com:statisticsnorway/rawdata-converter-testutils.git</developerConnection>
     <url>https://github.com/statisticsnorway/rawdata-converter-testutils</url>
-    <tag>HEAD</tag>
+    <tag>rawdata-converter-testutils-0.1.6</tag>
   </scm>
 
   <dependencies>
