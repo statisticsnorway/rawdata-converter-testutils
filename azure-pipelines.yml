@@ -8,7 +8,7 @@ trigger:
 
 jobs:
   - job: testAndBuild
-    container: maven:3-adoptopenjdk-14
+    container: maven:3.6.3-openjdk-15
     pool:
       vmImage: 'ubuntu-latest'
     variables:
